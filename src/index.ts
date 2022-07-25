@@ -23,6 +23,8 @@ app.use((error: ErrorStatus, req: Request, res: Response, next: NextFunction) =>
         const {kind = "", path = "", value = "unknown"} = error;
         message = `Invalid ${path}: ${value} need to be '${kind}'`;
         status = 400;
+    } else if (error.name === 'MongoServerError') {
+        status = 409;
     }
     res.status(status).json({message: message});
 });

@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import {Document, ErrorHandlingMiddlewareFunction} from "mongoose";
+import {Document, CallbackWithoutResultAndOptionalError} from "mongoose";
 
 interface IContact extends Document {
     name: string;
@@ -38,14 +38,16 @@ interface ErrorStatus extends Error {
     code: number
 }
 
-let handleErrors = (error: ErrorStatus, next: () => void) => {
-    error.status = 400;
-    let {name, code} = error;
-    if (code === 11000 || name === 'MongoServerError') {
-        error.status = 409;
+let handleErrors = (error: ErrorStatus, next: (error?: ErrorStatus) => void): void => {
+    if (error instanceof Error) {
+        error.status = 400;
+        let {name, code} = error;
+        if (code === 11000 || name === 'MongoServerError') {
+            error.status = 409;
+        }
+        return next(error);
     }
     next();
-
 };
 contactSchema.post("findOneAndUpdate", handleErrors);
 contactSchema.post("updateOne", handleErrors);

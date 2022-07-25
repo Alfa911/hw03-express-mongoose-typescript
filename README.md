@@ -1,33 +1,28 @@
-# homework02
+# homework03
 
 `@ GET /api/contacts`
 
-Результат: https://prnt.sc/P451P7IjeJxl
+Результат: https://prnt.sc/ahNgg1JDCSNu
 
 `@ GET /api/contacts/:id`
 
 Результат:
 \
-   Успешный: https://prnt.sc/2BukxCxeLE71
+   Успешный: https://prnt.sc/AUF8YrwEkFKi
 \
-    Не успешный: https://prnt.sc/yGrRboyyb1ev
-
-
+    Не успешный:https://prnt.sc/Yht6GaKzDEXB
+     
 `@ POST /api/contacts`
 
 Результаты:
 
 \
    Успешный:
-https://prnt.sc/Kba3ddcuhv-g
+ https://prnt.sc/ze2_BYEcJTfR
 \
     Не успешный:
 \
-https://prnt.sc/3mr-GXAPJmK_ 
-\
-https://prnt.sc/WfeeLETQFMAn
-\
-https://prnt.sc/_9ZEp5e9WBww
+https://prnt.sc/l2ETZkzlX5xL
 
 `@ PUT /api/contacts/:id`
 Результаты:
@@ -35,30 +30,30 @@ https://prnt.sc/_9ZEp5e9WBww
 \
    Успешный:
 
-https://prnt.sc/VIMAzYL742RG
+https://prnt.sc/KutgRIf9vBds
 \
     Не успешный:
 \
-https://prnt.sc/kJQsOfq8n-3Z
+https://prnt.sc/5rWq3dBVAEQ7
 \
-https://prnt.sc/f1rGRw-c7hML
+https://prnt.sc/EcsVueG42Uwi
 \
-https://prnt.sc/94dFL1GGWKai
+https://prnt.sc/3huQLSv2KTt7
 
 `@ DELETE /api/contacts/:id`
 \
    Успешный:
-https://prnt.sc/U4D8p4lZRZW3
+https://prnt.sc/twI0TI38u2pb
 
 Не успешный:
-https://prnt.sc/BRNi4jZPFCT_
+https://prnt.sc/ZNdXXJobQiQM
 
 `@ PATCH /api/contacts/:id/favorite`
  
  Успешный:
-https://prnt.sc/Kr9rlvQDlNZI
+https://prnt.sc/sjPShW-cPnwb
 
 Не успешный:
-https://prnt.sc/hu1EoIw4uW9t
+https://prnt.sc/0YmYOW_Mc6lT
 
-https://prnt.sc/Nw-ULItwQz2v
+https://prnt.sc/CdaHRldlmRob
